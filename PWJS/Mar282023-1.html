@@ -13,61 +13,16 @@
 <body>
     <div class="container">
         <div class="form-group my-3">
-            <label class="form-label" for="phoneNum"><strong>Phone/Cell Number:  <span id="numErrText"></span></strong></label>
+            <label class="form-label" for="phoneNum"><strong>Phone/Cell Number: <span
+                        id="numErrText"></span></strong></label>
             <input class="form-control" type="text" id="phoneNum" name="phoneNum"
                 placeholder="example(+92-314-2308332)">
         </div>
         <input class="btn btn-primary" type="button" id="chkBtn" name="chkBtn" value="Check">
     </div>
 
-    <script>
-        const numErrText = document.getElementById('numErrText');
-        const phoneNum = document.getElementById('phoneNum');
-        const chkBtn = document.getElementById('chkBtn');
-        function isPattern(userInput) {
-            if (typeof userInput !== 'string' || userInput.length !== 15) {
-                return false;
-            }
-            for (let i = 0; i < userInput.length; i++) {
-                let c = userInput[i];
-                switch (i) {
-                    case 0:
-                    case 1:
-                    case 2:
-                    case 4:
-                    case 5:
-                    case 6:
-                    case 8:
-                    case 9:
-                    case 10:
-                    case 11:
-                    case 12:
-                    case 13:
-                    case 14:
-                        if (c < 0 || c > 9) return false;
-                        break;
-                    case 3:
-                    case 7:
-                        if (c !== '-') return false;
-                        break;
-                }
-            }
-            return true;
-        }
 
-        chkBtn.addEventListener("click", function () {
-            let num =  phoneNum.value;
-            if(isPattern(num))
-            {
-                numErrText.innerText = `Valid`;
-                numErrText.classList.add("text-success");
-
-            }else{
-                numErrText.innerText = `Invalid!`;
-                numErrText.classList.add("text-danger");
-            }
-        });
-    </script>
+    <script src="Mar282023-1.js"></script>
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
