@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: cursive;
+            margin: 0px;
+            padding: 0px;
+        }
+        nav {
+            display: grid;
+            grid-template-columns: 1fr 4fr 2fr;
+            align-items: center;
+        }
+        nav ul {
+            list-style: none;
+
+            display: grid;
+            grid-template-columns: repeat(6,auto);            
+            align-items: center;
+        }
+        nav ul li a {
+            text-decoration: none;
+        }
+        .container {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            /* grid-template-columns: repeat(2,300px); */
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: 1fr 1fr 1fr; */
+            grid-template-columns: 1fr 2fr 4fr;
+
+
+            /* grid-template-rows: 200px 200px 200px; */
+            grid-auto-rows: 200px;
+        }
+        .box {
+            border: 1px dotted red;
+        }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logoBox">
+            <img src="contents/img/logo/logo485-4852378.png" alt="" height="50">
+        </div>
+        <ul>
+            <li><a href="">Menu-1</a></li>
+            <li><a href="">Menu-2</a></li>
+            <li><a href="">Menu-3</a></li>
+            <li><a href="">Menu-4</a></li>
+            <li><a href="">Menu-5</a></li>
+            <li><a href="">Menu-6</a></li>
+        </ul>
+        <div class="searchBox">
+            <input type="text" placeholder="Type here to search...">
+        </div>
+    </nav>
+    <div class="container">
+        <div class="box" id="b1">Box-1</div>
+        <div class="box" id="b2">Box-2</div>
+        <div class="box" id="b3">Box-3</div>
+        <div class="box" id="b4">Box-4</div>
+        <div class="box" id="b5">Box-5</div>
+        <div class="box" id="b6">Box-6</div>
+        <div class="box" id="b7">Box-7</div>
+        <div class="box" id="b8">Box-8</div>
+        <div class="box" id="b9">Box-9</div>
+    </div>
+</body>
+</html>

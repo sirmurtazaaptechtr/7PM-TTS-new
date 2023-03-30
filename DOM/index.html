@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis pariatur magni tenetur iusto distinctio, dolore beatae numquam itaque odio maxime molestiae a quis, ipsum delectus similique amet saepe. Aperiam, esse.</p>
+    <button id="btn1" onclick="document.getElementById('p1').innerText = 'this is my new text'">Change Text</button>
+
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "bookstore.xml", true);
+        xhttp.send();
+        function myFunction(xml) {
+            var xmlDoc = xml.responseXML;
+            document.getElementById("p1").innerHTML =
+            xmlDoc.getElementsByTagName("author")[1].childNodes[0].nodeValue;
+
+            xmlDoc.getElementsByTagName("author")[1].childNodes[0].nodeValue="Syed Murtaza Hussain";
+
+            document.getElementById("p1").innerHTML += "<br>"+
+            xmlDoc.getElementsByTagName("author")[1].childNodes[0].nodeValue;
+        }
+    </script>   
+    
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Slider</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: cursive;
+            margin: 0px;
+            padding: 0px;
+        }
+        .slider {
+            width: 100vw;
+            height: 60vh;
+            background-color: black;                        
+            background-image: url('https://source.unsplash.com/random/1233x552');
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: local;
+            animation-name: slide;
+            animation-duration: 20s;
+            animation-iteration-count: infinite;
+            animation-delay: 2s;
+            animation-fill-mode: backwards;
+        }
+        @keyframes slide {
+            0% {background-image: url('https://source.unsplash.com/random/1233x552');}
+            20% {background-image: url('https://source.unsplash.com/random/1231x550');}
+            40% {background-image: url('https://source.unsplash.com/random/1232x550');}
+            60% {background-image: url('https://source.unsplash.com/random/1233x550');}
+            80% {background-image: url('https://source.unsplash.com/random/1230x551');}
+            95% {background-image: url('https://source.unsplash.com/random/1230x552');}
+            
+        }
+    </style>
+</head>
+<body>
+    <h1>CSS Animation Slider</h1>
+    <div class="slider">
+        
+    </div>    
+</body>
+</html>

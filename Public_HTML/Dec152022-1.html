@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form {
+            border: 1px solid black;
+            background-color: wheat;
+            width: 300px;
+            margin: 48px auto;
+            padding: 48px;
+            border-radius: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <marquee behavior="scroll" direction="left" scrollamount="10" ><span id="showdt"></span></marquee>
+    </div>
+    <form>
+        <h2>SignIn</h2>
+        <input type="text" id="userName" placeholder="Enter Username"><br><br>
+        <input type="password" id="pwd" placeholder="Enter Password"><br><br>
+        <input type="button" value="Login" onclick="login(userName.value,pwd.value)">
+        <p id="msg"></p>
+    </form>
+    
+    <script src="app/Dec152022-1.js"></script>
+</body>
+
+</html>

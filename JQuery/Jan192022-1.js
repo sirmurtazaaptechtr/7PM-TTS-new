@@ -1,0 +1,11 @@
+$(document).ready(function(){
+    $("#flip").click(function(){
+        $("#panel").slideToggle("slow",function(){
+            console.log("Done");
+        });
+    });
+    $("#selectBG").click(function(){
+        $("body").attr("class",$(this).val()); 
+        $("div").toggleClass($(this).val());
+    });
+});

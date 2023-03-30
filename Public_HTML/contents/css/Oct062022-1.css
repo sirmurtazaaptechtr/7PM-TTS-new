@@ -1,0 +1,30 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+    margin: 0px;
+}
+.container {
+    border: 1px solid red;
+    background-color: blanchedalmond;
+    overflow: auto;
+}
+.box {
+    border: 1px solid green;
+    /* width: 200px;     */
+    /* float: left; */
+}
+#b1 {
+    width: 200px;    
+    background-color: wheat;
+    float: right;
+}
+#b2 {
+    width: 225px;
+    background-color: skyblue;
+    float: left;
+}
+#b3 {
+    width: 250px;
+    background-color: burlywood;
+    clear: both;
+}

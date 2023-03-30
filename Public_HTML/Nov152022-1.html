@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            font-family: cursive;
+            margin: 0px;padding: 0px;
+        }
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 200px 200px 200px; */
+            grid-template-columns: repeat(3,200px);
+            /* grid-template-columns: auto auto auto; */
+            /* grid-template-columns: repeat(3,auto); */
+            /* grid-template-columns: 1fr 7fr 1fr; */
+            /* grid-template-columns: 1fr repeat(2, 100px); */
+            /* grid-template-columns: repeat(2, 200px 1fr); */
+            /* grid-template-columns: repeat(auto-fill, 100px); */
+            /* grid-template-rows: 200px 100px 300px; */
+            /* grid-auto-columns: 200px; */
+            /* grid-auto-rows: 200px; */
+            grid-auto-rows: minmax(200px, auto);
+            /* row-gap: 50px;*/
+            /* column-gap: 80px;*/
+            gap: 50px 80px;
+        }
+        .grid-item {
+            border: 1px dashed red;
+        }
+        #gi1 {
+            /* grid-column: 2 / 2; */
+            grid-column: 2 / span 1;
+            /* grid-row: 2 / 2; */
+            grid-row: 2 / span 1;
+        }
+
+        .container {
+            margin-top: 16px;
+            display: grid;
+            grid-template-columns: repeat(4,200px);
+            grid-auto-rows: 200px;
+        }
+        .box {
+            border: 1px dashed blue;
+        }
+        #b1,#b6 {
+            grid-column: 1 / span 2;            
+        }
+        #b2,#b7 {
+            grid-column: 3 / span 2;            
+        }
+        #b4 {
+            grid-column: 2 / span 2;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item" id="gi1"><h2>1</h2></div>
+        <div class="grid-item" id="gi2"><h2>2</h2></div>
+        <div class="grid-item" id="gi3"><h2>3</h2></div>
+        <div class="grid-item" id="gi4"><h2>4</h2></div>
+        <div class="grid-item" id="gi5"><h2>5</h2></div>
+        <div class="grid-item" id="gi6"><h2>6</h2></div>
+        <div class="grid-item" id="gi7"><h2>7</h2></div>
+        <div class="grid-item" id="gi8"><h2>8</h2></div>
+        <div class="grid-item" id="gi9"><h2>9</h2></div>
+        <!-- <div class="grid-item" id="gi0"><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fugiat ipsa impedit dignissimos enim accusamus, pariatur illo, architecto placeat obcaecati quia et! Quidem nesciunt vitae voluptate deleniti ipsam ea doloremque ducimus.</p></div> -->
+    </div>
+    <div class="container">
+        <div class="box" id="b1">1</div>
+        <div class="box" id="b2">2</div>
+        <div class="box" id="b3">3</div>
+        <div class="box" id="b4">4</div>
+        <div class="box" id="b5">5</div>
+        <div class="box" id="b6">6</div>
+        <div class="box" id="b7">7</div>
+    </div>
+    
+</body>
+</html>

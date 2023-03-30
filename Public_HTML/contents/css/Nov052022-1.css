@@ -1,0 +1,62 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+     margin: 0px;
+     padding: 0px;
+}
+body {
+    background-color: black;
+}
+body::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1;    
+    background-image: url('../img/bg/bg-zexon.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 1;
+}
+nav {
+    background-color: black;
+    display: flex;    
+    justify-content: space-between;
+    align-items: center;
+}
+nav .logoBox img {
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    width: 475px;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+}
+@media only screen and (max-width:768px) {
+    body::before {        
+    background-image: none;        
+    }
+    nav {
+        background-color: rgba(0, 0, 0, 0.6);
+        flex-direction: column;
+    }
+    nav .logoBox, nav ul, nav .searchBox {
+        margin: 8px auto;
+    }  
+}
+@media only screen and (max-width:576px) {
+    nav ul {
+        width: fit-content;
+        flex-direction: column;
+        align-items: center;
+    }    
+}

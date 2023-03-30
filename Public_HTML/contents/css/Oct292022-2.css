@@ -1,0 +1,50 @@
+* {
+    font-family: cursive;
+}
+/* p {
+    color: violet;
+} */
+/* div p {
+    color: crimson;
+} */
+/* div span {
+    color: orange;
+} */
+/* div>span {
+    color: orange;
+} */
+div+p {
+    color: chartreuse;
+}
+/* li {
+    color: blue;
+} */
+/* li:first-child {
+    color: aqua;
+} */
+/* li:last-child {
+    color: yellow;
+} */
+/* li:nth-child(3) {
+    color: darkorange;
+} */
+/* li:nth-child(even) {
+    color: gray;
+} */
+/* li:nth-child(odd) {
+    color: pink;
+} */
+
+/* li:nth-child(1n+4) {
+    color: brown;
+} */
+/* li:nth-child(3n+0) {
+    color: purple;
+} */
+a[target="_blank"] {
+    text-decoration: none;
+    color: gold;
+}
+input[type="text"] {
+    background-color: aquamarine;
+}

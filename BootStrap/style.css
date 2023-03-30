@@ -1,0 +1,24 @@
+h1, h2 {
+    width: fit-content;
+    margin: 16px auto;
+    font-family: cursive;
+    font-weight: bold;    
+}
+p {
+    width: 75%;
+    margin: 16px auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.text-center {
+    text-align: center;
+}
+.bg-dark {
+    background-color: black
+}
+.color-light {
+    color: whitesmoke;
+}
+.color-warm {
+    color: wheat;    
+}

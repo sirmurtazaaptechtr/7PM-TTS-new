@@ -1,0 +1,87 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+    margin: 0px;padding: 0px;    
+}
+body {
+    background-color: black;
+    background-image: url('https://source.unsplash.com/random/1260x830');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+nav {
+    background-color: black;
+    overflow: auto;
+}
+nav .logoBox, nav ul, nav ul li {
+    float: left;
+}
+nav .logoBox {
+    margin: 0px 8px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    margin: 16px 36px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+}
+nav ul li a:hover {
+    color: rgb(255, 111, 4);
+}
+nav .searchBox {
+    margin: 8px 8px;
+    float: right;
+}
+nav .searchBox input[type="text"] {
+    background-color: wheat;
+    height: 36px;
+    width: 250px;
+    border-radius: 16px;
+    padding: 16px;
+    border: 0px;
+}
+nav .searchBox input[type="text"]:focus {
+    background-color: rgb(255, 111, 4);
+}
+main .box {
+    background-color: rgba(245, 245, 220, 0.6);
+    border-radius: 15px;
+    margin: 16px auto;
+    padding: 16px;
+    width: 640px;
+}
+main .box h1, main .box p {
+    margin: 16px auto;
+}
+main a {
+    text-decoration: none;
+}
+main .btn {
+    text-align: center;
+    vertical-align: middle;
+    display: inline-block;
+    border: 2px solid black;
+    background-color: black;
+    font-size: medium;
+    font-weight: bold;
+    font-style: normal;
+    color: beige;
+    width: 75px;
+    height: 50px;
+    padding: 11px 6px;
+    margin: 3px 6px;
+    cursor: pointer;
+}
+main .btn:hover {
+    box-shadow: 6px 6px 2px 1px black;
+    background-color: beige;
+    color: black;
+    border-radius: 12px;
+    font-weight: bolder;
+}

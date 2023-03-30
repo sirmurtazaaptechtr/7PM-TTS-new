@@ -1,0 +1,45 @@
+body {
+    background-color: bisque;
+}
+.box {
+    display: none;
+}
+#xl {
+    display: block;
+}
+@media only screen and (max-width:992px) {
+    body {
+        background-color: cornflowerblue;
+    }
+    #xl {
+        display: none;
+    }
+    #lg {
+        display: block;
+    }
+    
+}
+@media only screen and (max-width:768px) {
+    body {
+        background-color: tomato;
+    }
+    #lg {
+        display: none;
+    }
+    #md {
+        display: block;
+    }    
+}
+@media only screen and (max-width:576px) {
+    body {
+        background-color: indigo;
+    }
+    #md {
+        display: none;
+    }
+    #sm {
+        display: block;
+        color: whitesmoke;
+    }
+    
+}

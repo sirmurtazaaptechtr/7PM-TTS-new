@@ -1,0 +1,673 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <style>
+        table tbody {
+            counter-reset: cnt;
+        }
+
+        table tbody tr td:first-child::before {
+            counter-increment: cnt;
+            content: counter(cnt);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Bootstrap 5 Tables</h1>
+    <div class="container my-3">
+        <h2>Basic Table</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Striped Rows</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Bordered Table</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Hover Rows</h2>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Black/Dark Table</h2>
+        <table class="table table-dark">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Dark Striped Table</h2>
+        <table class="table table-dark table-striped">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Hoverable Dark Table</h2>
+        <table class="table table-dark table-hover">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Borderless Table</h2>
+        <table class="table table-borderless table-hover">
+            <thead>
+                <tr>
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr>
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Contextual Classes</h2>
+        <table class="table table-borderless table-hover">
+            <thead>
+                <tr class="table-dark">
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr class="table-success">
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr class="table-info">
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Small table</h2>
+        <table class="table table-borderless table-hover table-sm">
+            <thead>
+                <tr class="table-dark">
+                    <th>Sr.no</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Gender</th>
+                    <th>email</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-primary">
+                    <td>. </td>
+                    <td>Anas</td>
+                    <td>Khan</td>
+                    <td>Male</td>
+                    <td>anasnaeemkhan@gmail.com</td>
+                </tr>
+                <tr class="table-secondary">
+                    <td>. </td>
+                    <td>Hamza</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>hk0992669@gmail.com</td>
+                </tr>
+                <tr class="table-success">
+                    <td>. </td>
+                    <td>Saad</td>
+                    <td>Khurram</td>
+                    <td>Male</td>
+                    <td>saadkhurram9@gmail.com</td>
+                </tr>
+                <tr class="table-warning">
+                    <td>. </td>
+                    <td>Nabeel</td>
+                    <td>Shah</td>
+                    <td>Male</td>
+                    <td>ns1936605@gmail.com</td>
+                </tr>
+                <tr class="table-danger">
+                    <td>. </td>
+                    <td>Arman</td>
+                    <td>Mehmood</td>
+                    <td>Male</td>
+                    <td>armanmehmood12@gmail.com</td>
+                </tr>
+                <tr class="table-info">
+                    <td>. </td>
+                    <td>Aqsa</td>
+                    <td>Ahmed</td>
+                    <td>Female</td>
+                    <td>aqsaahmed95@gmail.com</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Responsive Tables</h2>
+        <div class="table-responsive-xxl    ">
+            <table class="table table-bordered">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Firstname</th>
+                        <th>Lastname</th>
+                        <th>Age</th>
+                        <th>City</th>
+                        <th>Country</th>
+                        <th>Sex</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                        <th>Example</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>. </td>
+                        <td>Anna</td>
+                        <td>Pitt</td>
+                        <td>35</td>
+                        <td>New York</td>
+                        <td>USA</td>
+                        <td>Female</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                        <td>Yes</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <h1>Bootstrap 5 Images</h1>
+    <div class="container my-3">
+        <h2>Image Shapes</h2>
+        <h3>Rounded Corners</h3>
+        <img src="img/newyork.jpg" alt="New York" class="rounded">
+        <h3>Rounded Circle</h3>        
+        <img src="img/cinqueterre.jpg" alt="Cinque Terre" class="rounded-circle">
+        <h3>Thumbnail</h3>
+        <img src="img/paris.jpg" alt="Paris" class="img-thumbnail">
+        <div class="overflow-auto">
+            <h2>Aligning Images</h2>
+            <img src="img/sanfran.jpg" alt="San Francisco" class="float-end">
+            <img src="img/newyork.jpg" alt="New York" class="float-start">
+        </div>
+        <h2 class="text-center">Centered Image</h2>
+        <img src="img/paris.jpg" alt="Paris" class="mx-auto d-block">
+        <h2>Responsive Images</h2>
+        <img src="img/ny.jpg" alt="New York" class="img-fluid">
+    </div>
+    <h1>Bootstrap 5 Jumbotro</h1>
+    <div class="container my-3">
+        <div class="m-5 p-5 text-bg-dark rounded">
+            <h1 class="display-5">Jumbotron Example</h1>
+            <p>A jumbotron was introduced in Bootstrap 3 as a big padded box for calling extra attention to some special content or information.</p>
+            <p>Jumbotrons are no longer supported in Bootstrap 5. However, you can use a <code>div</code> element and add special helper classes together with a color class to achieve the same effect</p>
+        </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

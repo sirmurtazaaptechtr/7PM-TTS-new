@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <style>
+        /* Center child elements */
+        #vc,
+        .website-counter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        #vc {
+            height: 10vh;
+        }
+
+        /* Styles for website counter container */
+        .website-counter {
+            background-color: #ff4957;
+            height: 50px;
+            width: 80px;
+            color: white;
+            border-radius: 30px;
+            font-weight: 700;
+            font-size: 25px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+
+<body>    
+    <p>Click below to show or hide paragraphs</p>
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <p class="para" id="p1">
+        1.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, voluptas! Ea deleniti voluptatibus
+        dignissimos quibusdam explicabo? Ducimus, tempora. Sequi quam incidunt similique aut pariatur deleniti id
+        molestias natus ipsum reprehenderit!
+    </p>
+    <p class="para" id="p2">
+        2.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, voluptas! Ea deleniti voluptatibus
+        dignissimos quibusdam explicabo? Ducimus, tempora. Sequi quam incidunt similique aut pariatur deleniti id
+        molestias natus ipsum reprehenderit!
+    </p>
+    <p class="para" id="p3">
+        3.Lorem ipsum dolor, sit amet consectetur adipisicing elit. Neque, voluptas! Ea deleniti voluptatibus
+        dignissimos quibusdam explicabo? Ducimus, tempora. Sequi quam incidunt similique aut pariatur deleniti id
+        molestias natus ipsum reprehenderit!
+    </p>
+
+    <div id="vc">
+        <div>Website visit count:</div>
+        <div class="website-counter"></div>
+    </div>
+
+    <marquee behavior="" direction="">
+        <span id="dt"></span>
+    </marquee>
+
+    <script>
+        const dt = document.getElementById('dt');
+        setInterval(function () {
+            const dateTime = new Date();
+            dt.innerText = dateTime;
+        }, 1000);
+
+        const counterContainer = document.querySelector(".website-counter");
+        const resetButton = document.querySelector("#reset");
+        let visitCount = localStorage.getItem("page_view");
+
+        // Check if page_view entry is present
+        if (visitCount) {
+            visitCount = Number(visitCount) + 1;
+            localStorage.setItem("page_view", visitCount);
+        } else {
+            visitCount = 1;
+            localStorage.setItem("page_view", 1);
+        }
+        counterContainer.innerHTML = visitCount;
+
+        // Adding onClick event listener        
+    </script>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

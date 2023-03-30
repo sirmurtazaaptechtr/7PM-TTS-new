@@ -1,0 +1,87 @@
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+    margin: 0px;padding: 0px;
+    text-align: center;    
+}
+header {
+    grid-area: hdr;
+    background-color: rgb(15,22,40);
+    color: white;height: 5vh;
+}
+nav {
+    grid-area: nav;
+    background-color: rgb(239,60,79);
+    color: white;height: 5vh;
+}
+#hero {
+    grid-area: hro;
+    background-color: rgb(76, 134, 198);
+    color: white;height: 65vh;
+}
+main {
+    grid-area: man;
+    background-color: rgb(36,52,75);
+    color: white;height: 20vh;
+}
+#fig1 {
+    grid-area: fg1;
+    background-color: rgb(193,228,230);
+    height: 10vh;
+}
+#asd1 {
+    grid-area: ad1;
+    background-color: rgb(77,189,151);
+    height: 10vh;    
+}
+footer {
+    grid-area: ftr;
+    background-color: rgb(255,209,105);
+    height: 10vh;
+}
+body {
+    display: grid;
+    grid-template-areas: 
+    'hdr nav nav nav'
+    'hro hro hro hro'    
+    'man man . fg1'    
+    'man man . ad1'    
+    'ftr ftr ftr ftr'
+    ;
+}
+@media only screen and (max-width:768px) {
+    body {
+        grid-template-areas: 
+        'hdr hdr hdr hdr'
+        'hro hro hro hro'
+        'nav man man man'
+        'nav ftr ftr ftr'
+        'nav ad1 ad1 fg1'
+        ;
+    }
+    #hero {
+        height: 55vh;
+    }
+    nav {
+        height: 40vh;
+    }    
+}
+@media only screen and (max-width:576px) {
+    body {
+        grid-template-areas: 
+        'hdr'
+        'hro'
+        'nav'
+        'man'
+        'ftr'
+        'ad1'
+        'fg1'
+        ;
+    }
+    #hero {
+        height: 55vh;
+    }
+    nav {
+        height: 40vh;
+    }    
+}

@@ -1,0 +1,23 @@
+header img {
+    height: 4vh;
+}
+nav ul {
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+}
+nav ul {
+    list-style: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+@media only screen and (max-width: 768px) {
+    nav ul {
+        grid-template-columns: auto;                                
+    }
+    nav ul li {
+        margin-top: 36px;
+    }
+}

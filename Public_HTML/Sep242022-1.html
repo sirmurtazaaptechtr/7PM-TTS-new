@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CSS Form exercise</title>
+</head>
+
+<body style="font-family: cursive;">
+    <div class="container">
+        <h1>Task - 1</h1>
+        <h2>Travel reservation form</h2>
+        <h3>* denotes mandotory</h3>
+        <form id="registration_form" method="POST">
+            <label>Full name*:</label><br>
+            <input type="text" name="full_name" placeholder="FirstName LastName" autofocus="autofocus" value=""><br>
+            <label>Email address*:</label><br>
+            <input type="text" name="email_addr" value=""><br>
+            <label>Select Tour Package* :</label><br>
+            <select name="package">
+                <option value="Goa">Goa</options>
+                <option value="Kashmir">Kashmir</options>
+                <option value="Rajasthan">Rajasthan</options>
+            </select><br>
+            <label>Arrival date*:</label><br>
+            <input type="text" name="arv_dt" placeholder="m/d/y" value=""><br>
+            <label>Number of persons*:</label><br>
+            <input type="text" name="persons" value="" s><br>
+            <label>What would you want to avail?*</label> <br>
+            Boarding<input type="checkbox" name="facilities[]" value="boarding"><br>
+            Fooding<input type="checkbox" name="facilities[]" value="fooding"><br>
+            Sight seeing<input type="checkbox" name="facilities[]" value="sightseeing"><br>
+            <label>Discount Coupon code:</label><br>
+            <input type="text" name="dis_code" value=""><br>
+            <label>Terms and conditions*</label><br>
+            <input type="radio" name="tnc" value="agree" checked>I agree
+            <input type="radio" name="tnc" value="disagree">I disagree<br>
+            <button type="submit" class="btn btn-large btn-primary" name="submit">Complete reservation</button>
+        </form>
+    </div>
+    <h1>Task - 2</h1>
+    <div class="container">
+        <form>
+            <table border="3" cellspacing="5px" width="40%">
+                <tr>
+                    <th colspan="2"> Registration Form </th>
+                </tr>
+                <tr>
+                    <td>Enter Name</td>
+                    <td> <input class="" type="text" /> </td>
+                </tr>
+                <tr>
+                    <td>Enter Password</td>
+                    <td><input type="password" /></td>
+                </tr>
+
+                <tr>
+                    <td>Enter Address</td>
+                    <td><textarea rows="3"></textarea></td>
+                </tr>
+
+                <tr>
+                    <td>Select Game</td>
+                    <td>
+                        <input type="checkbox" />Hockey <br />
+                        <input type="checkbox" />Football<br />
+                        <input type="checkbox" />Badminton<br />
+                        <input type="checkbox" />Cricket<br />
+                        <input type="checkbox" />volleyball
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Gender</td>
+                    <td>
+                        <input type="radio" name="s1" checked="true" /> Male
+                        <input type="radio" name="s1" /> Female
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Select ur age</td>
+                    <td>
+                        <select class="">
+                            <option>Select </option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>More than 22</option>
+                        </select>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>Select Photo</td>
+                    <td><input type="file" />
+                    </td>
+                </tr>
+
+                <tr>
+                    <td colspan="2">
+                        <input type="button" value="Click Me">
+                        <input type="reset">
+                        <input type="submit" value="Submit Form">
+                    </td>
+                </tr>
+            </table>
+
+        </form>
+    </div>
+    <h1>Task - 3</h1>
+    <div class="container">
+        <table width="400px" cellpadding="10" cellspacing="0">
+            <tr bgcolor="#de8704">
+                <td colspan="2">Sign Up</td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">First Name</td>
+                <td><input type="text" placeholder="Enter First Name"></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">Last Name</td>
+                <td><input type="text" placeholder="Enter Last Name"></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">Date of Birth</td>
+                <td><select>
+                        <option>Date</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option>
+                        <option>11</option>
+                        <option>12</option>
+                        <option>13</option>
+                        <option>14</option>
+                        <option>15</option>
+                        <option>16</option>
+                        <option>17</option>
+                        <option>18</option>
+                        <option>19</option>
+                        <option>20</option>
+                        <option>21</option>
+                        <option>22</option>
+                        <option>23</option>
+                        <option>24</option>
+                        <option>25</option>
+                        <option>26</option>
+                        <option>27</option>
+                        <option>28</option>
+                        <option>29</option>
+                        <option>30</option>
+                        <option>31</option>
+                    </select>
+                    <select>
+                        <option>Month</option>
+                        <option>January</option>
+                        <option>February</option>
+                        <option>March</option>
+                        <option>April</option>
+                        <option>May</option>
+                        <option>June</option>
+                        <option>July</option>
+                        <option>August</option>
+                        <option>September</option>
+                        <option>October</option>
+                        <option>November</option>
+                        <option>December</option>
+                    </select>
+                    <select>
+                        <option>Year</option>
+                        <option>1980</option>
+                        <option>1981</option>
+                        <option>1982</option>
+                        <option>1983</option>
+                        <option>1984</option>
+                        <option>1985</option>
+                        <option>1986</option>
+                        <option>1987</option>
+                        <option>1988</option>
+                        <option>1989</option>
+                        <option>1990</option>
+                        <option>1991</option>
+                        <option>1992</option>
+                        <option>1993</option>
+                        <option>1994</option>
+                        <option>1995</option>
+                        <option>1996</option>
+                        <option>1997</option>
+                        <option>1998</option>
+                        <option>1999</option>
+                        <option>2000</option>
+                        <option>2001</option>
+                        <option>2002</option>
+                        <option>2003</option>
+                        <option>2004</option>
+                        <option>2005</option>
+                        <option>2006</option>
+                        <option>2007</option>
+                        <option>2008</option>
+                        <option>2009</option>
+                        <option>2010</option>
+                        <option>2011</option>
+                        <option>2012</option>
+                        <option>2013</option>
+                        <option>2014</option>
+                        <option>2015</option>
+                        <option>2016</option>
+                        <option>2017</option>
+                        <option>2018</option>
+                        <option>2019</option>
+                        <option>2020</option>
+                    </select>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">Gender</td>
+                <td><input type="radio" name="gender">Male
+                    <input type="radio" name="gender">Female
+                </td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">Country</td>
+                <td><select>
+                        <option>Country</option>
+                        <option>India</option>
+                        <option>USA</option>
+                        <option>UK</option>
+                        <option>Japan</option>
+                    </select></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">E-mail</td>
+                <td><input type="text" placeholder="Enter E-mail"></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">Phone</td>
+                <td><input type="text" placeholder="Enter Phone"></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td align="right">Confirm Password</td>
+                <td><input type="password"></td>
+            </tr>
+            <tr bgcolor="lightgray">
+                <td></td>
+                <td><input type="checkbox">I Agree to the Terms of use</td>
+            </tr>
+            <tr bgcolor="#de8704">
+                <td colspan="2" align="right">
+                    <input type="Submit" class="submit">
+                    <input type="Reset" value="Cancel" class="reset">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h1>Task - 4</h1>
+    <div class="container">
+        <table bgcolor="Moccasin" border="7px" width="500px" cellpadding="4" cellspacing="12">
+            <tr bgcolor="IndianRed" align="center" style="height: 75px;">
+                <td>
+                    <font size="6" face="Comic Sans MS" color="white">Contact Us!</font>
+                </td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Name......"></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Email....."></td>
+            </tr>
+            <tr>
+                <td><input type="text" placeholder="Subject....."></td>
+            </tr>
+            <tr>
+                <td><textarea rows="5" placeholder="Message......."></textarea></td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="button" value="SEND MESSAGE" style="background: gold;">
+                </td>
+            </tr>
+        </table>
+    </div>
+    <h1>Task - 5</h1>
+    <div class="container">
+        <form>
+            <table border="1" cellpadding="5" cellspacing="0">
+                <tr>
+                    <td colspan="2" style="font:20px arial; text-align: center;">Sign In</td>
+                </tr>
+                <tr>
+                    <td>E-mail addresss</td>
+                    <td><input type="text"></td>
+                </tr>
+                <tr>
+                    <td>Password</td>
+                    <td><input type="password"></td>
+                </tr>
+                <tr>
+                    <td colspan="2" style="text-align: center;"><input type="button" value="Sign In"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+
+</html>

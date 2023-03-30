@@ -1,0 +1,23 @@
+h1::before {
+    content: "Mr. ";
+}
+
+h1::after {
+    content: " is my teacher.";
+}
+table {
+    width: 60%;
+    counter-reset: cnt;    
+}
+table tbody tr td:first-child::before {
+    counter-increment: cnt;
+    content: counter(cnt)". ";
+}
+div {
+    counter-reset: i;    
+}
+div h2::before{
+    counter-increment: i;
+    content: "Chapter # "counter(i);
+
+}

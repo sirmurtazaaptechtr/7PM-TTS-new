@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <h1 id="head1"></h1>
+
+    <table class="table table-primary table-striped">
+        <thead id="tableHeader"></thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+    
+
+    <script>
+        const head1 = document.getElementById('head1');
+        const tableHeader = document.getElementById('tableHeader');
+        const tableBody = document.getElementById('tableBody');
+        let num = 5;
+        head1.innerText = num;
+        num = 15;
+        head1.innerText = num;
+        num = [5,15];
+        head1.innerText = num;
+        head1.innerText = num[0];
+        head1.innerText = num[1];
+        
+        num = {height:5,width:15};        
+        head1.innerText = num.height;
+        head1.innerText = num.width;
+        head1.innerText = num.height+" X "+num.width;
+        numJSON = JSON.stringify(num);
+        head1.innerText = numJSON;
+        
+        num = '{"name":"John", "age":30, "car":"Suzuki"}';
+        head1.innerText = num;
+
+        numObj = JSON.parse(num);
+        head1.innerText = numObj;
+        head1.innerText = numObj.name;
+        head1.innerText = numObj.age;
+        head1.innerText = numObj.car;
+
+        let myJSON ='{"employees":[{"firstName":"John","lastName":"Doe","DOB":"28-Apr-1998"},{"firstName":"Anna","lastName":"Smith","DOB":"10-Apr-1996"},{"firstName":"Peter","lastName":"Jones","DOB":"5-Mar-2000"}]}';
+
+        console.log(myJSON);
+
+        let myObj = JSON.parse(myJSON);
+        let myArr = myObj.employees;
+
+        console.log(myObj);
+        console.log(myArr);
+
+        tableHeader.innerHTML = `
+        <tr>
+            <th>Sr.no.</th>
+            <th>First Name</th>
+            <th>Last Name</th>
+            <th>Age</th>
+        </tr>
+        `;
+        
+        myArr.forEach((element,index) => {
+            tableBody.innerHTML +=`
+            <tr>
+                <td>${index+1}</td>
+                <td>${element.firstName}</td>
+                <td>${element.lastName}</td>
+                <td>${element.DOB}</td>
+            </tr>
+            `;                         
+        });
+
+        
+
+
+        
+    </script>
+</body>
+</html>

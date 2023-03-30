@@ -1,0 +1,63 @@
+* {
+    font-family: cursive;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+h1, h2, div, p {
+    margin: 16px 0px;
+}
+nav {
+    position: sticky;
+    top: 0px;
+    background-color: black;
+    overflow: auto;
+}
+nav .logoBox, nav ul, nav ul li {
+    float: left;
+}
+nav .logoBox {
+    margin: 0px 8px;
+}
+nav ul {
+    list-style: none;
+}
+nav ul li {
+    margin: 16px 36px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+}
+nav ul li a:hover {
+    color: rgb(255, 111, 4);
+}
+nav .searchBox {
+    margin: 8px 8px;
+    float: right;
+}
+nav .searchBox input[type="text"] {
+    background-color: wheat;
+    height: 36px;
+    width: 250px;
+    border-radius: 16px;
+    padding: 16px;
+    border: 0px;
+}
+nav .searchBox input[type="text"]:focus {
+    background-color: rgb(255, 111, 4);
+}
+.container, .main {
+    border: 1px solid silver;
+}
+.box {
+    border: 1px solid red;
+    height: 200px;
+    width: 200px;
+}
+#b3 {
+    position: fixed;
+    top: 400px;
+    left: 200px;
+}

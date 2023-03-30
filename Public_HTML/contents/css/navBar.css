@@ -1,0 +1,23 @@
+nav {    
+    background-color: black;    
+    
+    display: flex;
+    flex-wrap: wrap;    
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+}
+nav .logoBox a img {
+    height: 50px;
+}
+nav ul {
+    list-style: none;
+    flex-basis: 500px;
+    
+    display: flex;
+    justify-content: space-evenly;
+}
+nav ul li a {
+    text-decoration: none;
+    color: wheat;
+}

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Personal Information Card</h1>
+    <form>
+        <div>
+            <label for="dt"><b>Dated : </b></label>
+            <input type="date" name="date" id="dt">
+        </div><br>
+        <div>
+            <label for="fName"><b>Full Name : </b></label>
+            <input type="text" placeholder="Enter Full Name" id="fName">
+        </div><br>
+        <div>
+            <label for="dob"><b>Date of Birth : </b></label>
+            <input type="date" name="dateofbirth" id="dob">
+        </div><br>
+        <div>
+            <label for="ph"><b>Phone Number : </b></label>
+            <input type="tel" name="phonenumber" id="ph">
+        </div><br>
+        <div>
+            <label for="eMail"><b>eMail Address : </b></label>
+            <input type="email" name="emailaddress" id="eMail">
+        </div><br>
+        <div>
+            <label for="gdr"><b>Gender : </b></label>
+            <select name="gender" id="gdr">
+                <option value="M">Male</option>
+                <option value="F">Female</option>
+                <option value="O">Other</option>
+            </select>
+        </div><br>
+        <div>
+            <label for=""><b>Country : </b></label>
+            <select name="" id="">
+                <option value="">Pakistan</option>
+            </select>
+            <br><br>
+            <label><b>State : </b></label>            
+            <input type="radio" name="state" id="sindh">
+            <label for="sindh">Sindh</label>
+            <input type="radio" name="state" id="punjab">
+            <label for="">Punjab</label>
+            <input type="radio" name="state" id="baloch">
+            <label for="">Balochistan</label>
+            <input type="radio" name="state" id="kpk">
+            <label for="">KPK</label>
+            <input type="radio" name="state" id="gb">
+            <label for="">GB</label>
+            <input type="radio" name="state" id="kashmir">
+            <label for="">Kashmir</label>
+            <br><br>
+            <label for="ct"><b>City : </b></label>
+            <select name="city" id="ct">
+                <option value="">Karachi</option>
+                <option value="">Lahore</option>
+                <option value="">Islamabad</option>
+                <option value="">Multan</option>
+                <option value="">Peshawar</option>
+                <option value="">Quetta</option>
+                <option value="">Muzafarabad</option>
+                <option value="">Skardu</option>
+            </select>
+            <br><br>
+            <label for="st"><b>Street : </b></label>
+            <input type="text" name="street" id="st">
+        </div><br>
+        <div>
+            <label for="agmnt">Have you read the tearms and conditions?</label>
+            <input type="checkbox" name="agree" id="agmnt">
+        </div><br>
+        <div>
+            <label for="">write below an essay about yourself (120-Words)</label><br><br>
+            <textarea name="" id="" cols="150" rows="20"></textarea>
+        </div><br>
+        <input type="reset" value="Clear">
+        <input type="submit" value="Send">
+        </div>
+    </form>
+</body>
+</html>

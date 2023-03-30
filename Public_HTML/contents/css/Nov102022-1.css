@@ -1,0 +1,50 @@
+* {
+    box-sizing: border-box;
+    font-family: cursive;
+    margin: 0px;padding: 0px;
+}
+.container {
+    border: 1px solid red;
+    height: 60vh;   
+}
+.box {
+    position: absolute;
+    width: 20vw;
+    height: 20vh;
+    border: 1px solid gold;    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    background-attachment: local;
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: myAni;
+    animation-duration: 8s;
+    animation-timing-function: ease-in-out;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    /* animation-fill-mode: both; */
+}
+#b1{
+    animation-delay: 0s;
+    background-image: url('https://source.unsplash.com/random/246x176');
+    z-index: 4;
+}
+#b2{
+    animation-delay: 2s;
+    background-image: url('https://source.unsplash.com/random/245x176');
+    z-index: 3;
+}
+#b3{animation-delay: 4s;background-image: url('https://source.unsplash.com/random/246x175');z-index: 2;}
+#b4{animation-delay: 6s;background-image: url('https://source.unsplash.com/random/245x175');z-index: 1;}
+@keyframes myAni {
+    /* 
+    from {top: 0px;left: 0px;}
+    to {top: 0px;left: 83.5vw;}
+    */
+    0% {top: 0vh;left: 0vw;}
+    25% {top: 40vh;left: 0vw;}
+    50% {top: 40vh;left: 80vw;}
+    75% {top: 0vh;left: 80vw;}
+    100% {top: 0vh;left: 0vw;}    
+}
