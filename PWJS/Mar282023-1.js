@@ -32,13 +32,11 @@ const chkBtn = document.getElementById('chkBtn');
 //     return true;
 // }
 function isPattern(userInput){
-    let regEx1 = /^\d{3}-\d{3}-\d{7}$/;
-    let regEx2 = new RegExp('^\d{3}-\d{3}-\d{7}$');
-    let isMatch = regEx1.test(userInput);
-    console.log(regEx1);
-    console.log(regEx2);
-    console.log(userInput);
-    console.log(isMatch);
+    let regEx1 = /^[+]\d{2}-\d{3}-\d{7}$/;
+    let regEx2 = new RegExp('^+\d{2}-\d{3}-\d{7}$');
+    let isMatch = regEx1.test(userInput);    
+    let isMatchSec = regEx1.test(userInput);
+    console.log(isMatchSec);
     return isMatch;
 }
 chkBtn.addEventListener("click", function () {

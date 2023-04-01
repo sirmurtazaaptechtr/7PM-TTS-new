@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        console.log('~~~Anchors~~~');
+        const regexPattern1 = /^cat/;
+        console.log(regexPattern1.test('cat and mouse')); // Output: true
+        console.log(regexPattern1.test('The cat and mouse')); // Output: false because the line does not start with cat
+        
+        // Without the ^ in the pattern, the output will return true
+        // because we did not assert a boundary.
+        const regexPattern2 = /cat/;
+        console.log(regexPattern2.test('The cat and mouse')); // Output: true
+        console.log(regexPattern2.test('cat and mouse')); // Output: true
+        
+        const regexPattern3 = /cat$/;
+        console.log(regexPattern3.test('The mouse and the cat')); // Output: true
+        console.log(regexPattern3.test('The cat and mouse')); // Output: false
+
+        console.log('~~~Boundaries~~~');
+        
+        // Syntax 1: /\b.../ where .... represents a word.
+        // Search for a word that begins with the pattern ward       
+        const regexPattern4 = /\bward/gi;        
+        const text1 = 'backward Wardrobe Ward';
+        console.log(text1.match(regexPattern4)); // Output: ['Ward', 'Ward']
+        
+        // Syntax 2: /...\b/
+        // Search for a word that ends with the pattern ward
+        const regexPattern5 = /ward\b/gi;        
+        const text2 = 'backward Wardrobe Ward';
+        console.log(text2.match(regexPattern5)); // Output: ['ward', 'Ward']
+        
+        // Syntax 3: /\b....\b/
+        // Search for a stand-alone word that begins and end with the pattern ward
+        const regexPattern6 = /\bward\b/gi;
+        const text3 = 'backward Wardrobe Ward';
+        console.log(text3.match(regexPattern6)); // Output: ['Ward']
+        
+        console.log('~~~Character Class~~~');
+        
+        // Find and match a word with two alternative spellings
+        const regexPattern7 = /ambi[ae]nce/;
+        console.log(regexPattern7.test('ambiance')); // Output: true
+        console.log(regexPattern7.test('ambience')); // Output: true
+        // The regex pattern interprets as:  find a followed by m, then b,
+        // then i, then either e or a, then n, then c, and then e.
+    </script>    
+</body>
+</html>
