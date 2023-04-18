@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="colorSelect">
+        <option value="red">RED</option>
+        <option value="green">GREEN</option>
+        <option value="blue">BLUE</option>
+        <option value="black">BLACK</option>
+        <option value="white">WHITE</option>
+    </select>
+
+    <button onclick="longCalc()">Start Long Task</button>
+    <p id="p1"></p>
+
+    <script>
+        const colorSelect = document.getElementById('colorSelect');
+        const p1 = document.getElementById('p1');
+
+        colorSelect.addEventListener("change", () => {
+            let bgColor = colorSelect.value;
+            document.querySelector('body').style.backgroundColor = bgColor;
+            if (bgColor !== 'white') {
+                document.querySelector('body').style.color = 'white';
+            } else {
+                document.querySelector('body').style.color = 'black';
+            }
+        });
+        const startWorker = () => {
+            let w;
+            if (typeof (Worker) !== 'undefined') {
+                if (typeof (w) == 'undefined') {
+                    w = new Worker("webWorker2.js");
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
