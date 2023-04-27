@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-
 <body>
     <select name="" id="colorSelect">
         <option value="red">RED</option>
@@ -16,15 +14,11 @@
         <option value="black">BLACK</option>
         <option value="white">WHITE</option>
     </select>
-
     <button onclick="startWorker()">Start Long Task</button>
     <p id="p1"></p>
-
     <script>
         const colorSelect = document.getElementById('colorSelect');
         const p1 = document.getElementById('p1');
-
-
         colorSelect.addEventListener("change", () => {
             let bgColor = colorSelect.value;
             document.querySelector('body').style.backgroundColor = bgColor;
@@ -33,22 +27,20 @@
             } else {
                 document.querySelector('body').style.color = 'black';
             }
-        });
-        const startWorker = () => {            
+        });        
+        const startWorker = () => {
+            p1.innerText = "Worker is working....";
             let w;
-            if (typeof (Worker) !== 'undefined') {
-                if (typeof (w) == 'undefined') {
-                    w = new Worker("webWorker2.js");
-                    p1.innerText = "Performing long calculations...";
-                }
-                w.onmessage = function (event) {                    
-                    p1.innerText += event.data;
-                    w.terminate();
-                    w = undefined;
-                };                
+            if(typeof(w) === 'undefined'){
+                w = new Worker('webWorker3.js');
             }
+            w.onmessage = (event) => {
+                console.log(event);
+                p1.innerText += event.data;
+                w.terminate();
+                w = undefined;
+            };
         }
     </script>
 </body>
-
 </html>
