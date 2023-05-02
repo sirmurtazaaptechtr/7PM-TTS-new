@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="mb-3">
+        <label for="notePriority" class="form-label">Priority</label>
+        <div id="notePriority" class="form-check">
+            <input class="form-check-input" type="radio" name="priority" id="pHigh" value="bg-danger" checked>
+            <label class="form-check-label" for="pHigh">
+                <span class="text-danger">High</span>
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="priority" id="pModrate" value="bg-warning">
+            <label class="form-check-label" for="pModrate">
+                <span class="text-warning">Modrate</span>
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="priority" id="pLow" value="bg-primary">
+            <label class="form-check-label" for="pLow">
+                <span class="text-primary">Low</span>
+            </label>
+        </div>
+    </div>
+    <button type="button" onclick="displayRadioValue()">
+        Submit
+    </button>
+    <div id="result"></div>
+
+    <script>
+        let priority = document.getElementsByName("priority");
+       function displayRadioValue(){
+        console.log(priority);
+        for (i = 0; i < priority.length; i++) {
+            if (priority[i].checked){
+                document.getElementById("result").innerHTML
+                = `<h4>"Priority: " + ${priority[i].value}</h4>`;
+                console.log(priority[i].value);
+            }
+                
+        }
+       }
+    </script>    
+</body>
+</html>

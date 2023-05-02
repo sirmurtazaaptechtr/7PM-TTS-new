@@ -27,20 +27,47 @@
 
             </ul>
             <form class="form-inline my-2 my-lg-0">
-                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control mr-sm-2" id="searchTxt" type="search" placeholder="Search"
+                    aria-label="Search">
                 <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
     </nav>
-
 
     <div class="container my-3">
         <h1>Welcome To Magic Notes</h1>
         <div class="card">
             <div class="card-body">
                 <h5 class="card-title">Add a note</h5>
-                <div class="form-group">
-                    <textarea class="form-control" id="addTxt" rows="3"></textarea>
+                <div class="mb-3">
+                    <label for="noteTitle" class="form-label">Title</label>
+                    <input type="text" class="form-control" id="noteTitle" placeholder="My Note">
+                </div>
+                <div class="mb-3">
+                    <label for="addTxt" class="form-label">Description</label>
+                    <textarea class="form-control" id="addTxt" rows="3"
+                        placeholder="Note description goes here ..."></textarea>
+                </div>
+                <div class="mb-3">
+                    <label for="notePriority" class="form-label">Priority</label>
+                    <div id="notePriority" class="form-check">
+                        <input class="form-check-input" type="radio" name="priority" id="pHigh" value="bg-danger" checked>
+                        <label class="form-check-label" for="pHigh">
+                            <span class="text-danger">High</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="priority" id="pModrate" value="bg-warning">
+                        <label class="form-check-label" for="pModrate">
+                            <span class="text-warning">Modrate</span>
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="priority" id="pLow" value="bg-primary">
+                        <label class="form-check-label" for="pLow">
+                            <span class="text-primary">Low</span>
+                        </label>
+                    </div>
                 </div>
                 <button class="btn btn-primary" id="addBtn">Add Note</button>
             </div>
